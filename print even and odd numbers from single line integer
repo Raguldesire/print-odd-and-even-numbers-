@@ -1,0 +1,15 @@
+                            #step 1: create a input as list
+a=list(map(int,(input())))
+a.sort()                    #sort function we use here in last step bcoz we need to print output in asc order
+even=[]
+odd=[]
+                            #creating for loop for getting odd and even numbers
+for i in range(len(a)):
+
+                            #using modulo division for getting even numbers
+  if a[i]%2==0:
+    even.append(a[i])       #add the even numbers to the list.even
+  else:
+     odd.append(a[i])       #add the odd numbers to the list.odd
+print(*even)
+print(*odd)
